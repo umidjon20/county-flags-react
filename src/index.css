@@ -27,6 +27,7 @@ body{
     align-items: center;
     row-gap: 2.5rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 .card_item{
     width: 100%;

@@ -13,91 +13,68 @@ const world = [
     {
         image:imageGermany,
         title:'Germany',
-        population:'Population',
-        infoPopulation: '91,770,900',
-        region:'Region',
-        infoRegion:'Europe',
-        capital:'Capital',
-        capitalName:'Berlin'
+        population:'91,770,900',
+        region:'Europe',
+        capital:'Berlin'
     },
     {
         image:imageUsa,
         title:'United States of America',
-        population:'Population',
-        infoPopulation: '323,947,000',
-        region:'Region',
-        infoRegion:'Americas',
-        capital:'Capital',
-        capitalName:'Washington.D.C'
+        population:'323,947,000',
+        region:'Americas',
+        capital:'Washington.D.C'
     },
     {
         image:imageBrazil,
         title:'Brazil',
-        population:'Population',
-        infoPopulation: '206,135,893',
-        region:'Region',
-        infoRegion:'Americas',
-        capital:'Capital',
-        capitalName:'Brasilia'
+        population:'206,135,893',
+        region:'Americas',
+        capital:'Brasilia'
     },
     {
         image:imageIceland,
         title:'Iceland',
-        population:'Population',
-        infoPopulation: '334,300',
-        region:'Region',
-        infoRegion:'Europe',
-        capital:'Capital',
-        capitalName:'Reykjavik'
+        population:'334,300',
+        region:'Europe',
+        capital:'Reykjavik'
     },
     {
         image:imageAfg,
         title:'Afghanistan',
-        population:'Population',
-        infoPopulation: '27,657,145',
-        region:'Region',
-        infoRegion:'Asia',
-        capital:'Capital',
-        capitalName:'Kabul'
+        population:'27,657,145',
+        region:'Asia',
+        capital:'Kabul'
     },
     {
         image:imageAlisl,
         title:'Aland Islands',
-        population:'Population',
-        infoPopulation: '28,875',
-        region:'Region',
-        infoRegion:'Europe',
-        capital:'Capital',
-        capitalName:'Mariehamn'
+        population:'28,875',
+        region:'Europe',
+        capital:'Mariehamn'
     },
     {
         image:imageAlbania,
         title:'Albania',
-        population:'Population',
-        infoPopulation: '2,886,026',
-        region:'Region',
-        infoRegion:'Europe',
-        capital:'Capital',
-        capitalName:'Tirana'
+        population:'2,886,026',
+        region:'Europe',
+        capital:'Tirana'
     },
     {
         image:imageAlgeria,
         title:'Algeria',
-        population:'Population',
-        infoPopulation: '40,400,000',
-        region:'Region',
-        infoRegion:'Africa',
-        capital:'Capital',
-        capitalName:'Algiers'
+        population:'40,400,000',
+        region:'Africa',
+        capital:'Algiers'
+        
     }
 ]
 
 class Cardlist extends Component{
     render(){
         const countrys = world.map((item,id)=>{
-            const {image,title,population,infoPopulation,region,infoRegion,capital,capitalName} = item
-            return <CardlistItem imageSrc = {image} title={title} population={population} infoPopulation={infoPopulation}
-            region={region} infoRegion= {infoRegion} capital = {capital} capitalName = {capitalName}/>
+            const {image,title,population,region,capital} = item
+            return <CardlistItem imageSrc = {image} title={title} population={population}
+            region={region} capital = {capital}/>
         })
 
         return(

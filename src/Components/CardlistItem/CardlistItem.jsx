@@ -3,20 +3,20 @@ import { Component } from "react";
 
 class CardlistItem extends Component{
     render(){
-        const {imageSrc,title,population,infoPopulation ,region,infoRegion, capital,capitalName} = this.props
+        const {imageSrc,title,population ,region, capital} = this.props
         return(
             <div className="card_item">
                 <img src={imageSrc} alt="" />
                 <h3>{title}</h3>
                 <div className="info">
                     <span>
-                        <strong>{population}</strong>: {infoPopulation}
+                        <strong>Population</strong>: {population}
                     </span>
                     <span>
-                        <strong>{region}</strong>: {infoRegion}
+                        <strong>Region</strong>: {region}
                     </span>
                     <span>
-                        <strong>{capital}</strong>: {capitalName}
+                        <strong>Capital</strong>: {capital}
                     </span>
                 </div>
             </div>
